@@ -1,7 +1,7 @@
 Function push-code{
-    Set-Location E:\project\notes
+    # Set-Location E:\project\notes
     $now = Get-Date
-    $msg = "==>" + $now.ToString('yyyy年MM月dd日 HH:mm:ss')
+    $msg = "==>" + $now.ToString('yyyy年MM月dd日 HH:mm:ss') + "auto push"
     Write-Output $msg >> .\gitpush.log
     git pull >> .\gitpush.log
     git add . >> .\gitpush.log
